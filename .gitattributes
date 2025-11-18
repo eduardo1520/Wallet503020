@@ -1,0 +1,28 @@
+# ------------------------------------------------------
+# Forçar o GitHub a reconhecer os arquivos como Rust
+# ------------------------------------------------------
+src/* linguist-language=Rust
+*.rs linguist-detectable=true
+
+# ------------------------------------------------------
+# Ignorar pastas que não devem contar como código
+# ------------------------------------------------------
+
+# A pasta target/ contém arquivos compilados — ignorar
+target/* linguist-vendored
+
+# Dependências externas que não contam como código do projeto
+vendor/* linguist-vendored
+
+# Arquivos gerados automaticamente
+*.lock linguist-generated
+*.json linguist-generated
+*.wasm linguist-generated
+
+# Construções de documentação automáticas
+docs/* linguist-documentation
+
+# ------------------------------------------------------
+# Evitar contagem de testes como linguagem principal (opcional)
+# ------------------------------------------------------
+tests/* linguist-vendored
