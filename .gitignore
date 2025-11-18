@@ -1,0 +1,17 @@
+/target/
+/debug/
+/release/
+/dist/
+/doc/
+/build/
+/coverage/
+**/*.rs.bk
+*.swp
+*.swo
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.env
+.env.*
